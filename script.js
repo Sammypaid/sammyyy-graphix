@@ -164,33 +164,24 @@ document.addEventListener("DOMContentLoaded", () => {
        BACK TO TOP
     ========================== */
 
-    const topBtn=document.getElementById("topBtn");
+   const topBtn = document.getElementById("topBtn");
 
-    window.addEventListener("scroll",()=>{
-
-        if(window.scrollY>500){
-
-            topBtn.classList.add("show");
-
-        }else{
-
-            topBtn.classList.remove("show");
-
-        }
-
-    });
-
-    topBtn.addEventListener("click",()=>{
-
+if (topBtn) {
+    topBtn.addEventListener("click", () => {
         window.scrollTo({
-
-            top:0,
-
-            behavior:"smooth"
-
+            top: 0,
+            behavior: "smooth"
         });
-
     });
+
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 500) {
+            topBtn.classList.add("show");
+        } else {
+            topBtn.classList.remove("show");
+        }
+    });
+}
 
     /* ==========================
        CONTACT FORM
