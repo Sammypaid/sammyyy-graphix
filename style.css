@@ -1141,7 +1141,7 @@ justify-content:center;
 
 align-items:center;
 
-background:#111;
+background:#161616;
 
 border-radius:50%;
 
@@ -1154,6 +1154,22 @@ transition:.3s;
 background:#c1121f;
 
 transform:translateY(-5px);
+
+}
+
+.social-icons a i{
+
+color:#fff;
+
+font-size:22px;
+
+transition:.3s;
+
+}
+
+.social-icons a:hover i{
+
+color:#fff;
 
 }
 
